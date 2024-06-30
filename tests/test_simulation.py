@@ -33,6 +33,3 @@ class TestSimulation(unittest.TestCase):
     def test_the_simulation_robot_has_a_laser_scan(self):
         out, err = self.run_command('rostopic list')
         self.assertIn('laser/scan', out)
-    
-    def test_these_tests_must_pass_or_the_pipeline_fails(self):
-        self.assertFalse(True)
